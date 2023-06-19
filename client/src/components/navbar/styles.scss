@@ -1,0 +1,48 @@
+.main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(82, 22, 22);
+    height: 60px;
+
+    .logo {
+        display: flex;
+        color: rgb(255, 255, 255);
+        padding-left: 15px;
+
+        >h2 {
+            vertical-align: bottom;
+        }
+    }
+
+    .auth-wrapper {
+        margin-right: 20px;
+
+        >a {
+            background-color: rgb(82, 22, 22);
+            color: white;
+
+            &:hover {
+                background-color: white;
+                color:  rgb(82, 22, 22);
+                border-color: rgb(82, 22, 22);
+            }
+        }
+
+        .logout {
+            padding: 3px 10px 3px 10px;
+            color:  rgb(82, 22, 22);
+            background-color: white;
+            border-radius: 3px;
+            border-color: rgb(82, 22, 22);
+            cursor: pointer;
+            &:hover {
+                border: 1px solid white;
+                border-radius: 3px;
+                background-color: rgb(82, 22, 22);
+                color:  white;
+            }
+        }
+       
+    }
+}

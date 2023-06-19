@@ -1,0 +1,56 @@
+
+.card-wrapper {
+    display:grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    border: 1px solid #222;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 3px;
+    box-shadow: 0px 0px 1px #222;
+    align-items: center;
+
+    .translator-info {
+        grid-column: 1;
+        .name-wrapper {
+            display: flex;
+            width: 200px;
+            >span {
+                font-size: 25px;
+                padding-right: 7px;
+                color: rgb(82, 22, 22);
+            }
+        }
+    
+        .languages-wrapper {
+            >span {
+                font-size: 15px;
+                padding-right: 7px;
+            }
+        }
+    }
+
+    .rating {
+        grid-column: 2;
+
+        >span {
+            font-size: 17px;
+        }
+    }
+
+    .button-wrapper {
+        grid-column: 3;
+        margin-left: auto;
+        align-self: center;
+        padding-right: 30px;
+        >a {
+            background-color: rgb(82, 22, 22);
+            color: white;
+
+            &:hover {
+                background-color: white;
+                color:  rgb(82, 22, 22);
+                border-color: rgb(82, 22, 22);
+            }
+        }
+    }
+}
